@@ -1,0 +1,184 @@
+
+/*------------------------------------Service-------------  */
+
+
+  
+  .form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-image: transperent;
+    border-radius: 2.5em;
+    padding: 30px;
+    width: 500px;
+    height: 520px;
+    position: relative;
+    left: 0px;
+    top: 20px;
+    overflow: hidden;
+
+  }
+  
+  
+  .button {
+    position: relative;
+    left: -112px;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:  #536942;
+    display: flex;
+    align-items: center;
+    border: 1px solid #536942;
+  padding: 10px 80px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.5s;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    border: 1px solid #f5d225;
+  font-weight: 600;
+    background: #f5d225;
+    color: white;
+  }
+  
+  .button:active {
+    border: 2px solid #66da4300;
+    background: #ff5900;
+    color: black;
+  }
+  
+  .input {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #66da4300;
+    border-bottom: 1px solid #C5CDBF;
+  
+    outline: none;
+    background-color: transparent;
+    color:#878e82;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.2s;
+  }
+  
+  .input:focus {
+    border: 1px solid #66da4300;
+    border: 1px solid #3eea35;
+  border-radius: 6px;
+    background-color: transparent;
+    color: #536942;
+  
+  }
+  
+  .input::placeholder {
+    color: #878e82;
+    font-weight: 400;
+  }
+  
+  .textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    width: calc(100% - 10px);
+    padding: 8px;
+    height: 200px;
+    margin-bottom: 20px;
+    border: 1px solid #66da4300;
+    border-bottom: 1px solid #C5CDBF;
+    outline: none;
+    background-color: transparent;
+  
+  }
+  
+  .textarea::placeholder {
+    color: #878e82;
+    font-weight: 400;
+  }
+  
+  .textarea:focus {
+    border: 1px solid #66da4300;
+    border: 1px solid #f5d225;
+  border-radius: 6px;
+    background-color: transparent;
+    color: #536942;
+  
+  }
+  
+  .c-f{
+    width: 98dvw;
+    height: 80dvh;
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    overflow-y: hidden;
+
+  }
+
+  
+  .about{
+    overflow-y: hidden;
+  
+    background: url('../images/s21.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: cover;
+  width: auto;
+  height: 60dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  font-weight: bolder;
+  color: white;
+  }
+
+  .c-f h1{
+    position: relative;
+    left: 70px;
+    font-size: 120px;
+    width: 600px;
+    height: 160px;
+    font-weight: bolder;
+color:#343842 ;
+font-family: "Space Grotesk", sans-serif;
+
+  }
+
+  .c-f p{
+    text-align: left;
+    width: 600px;
+    margin-top: 30px;
+    position: relative;
+    left: 100px;
+    font-size: 28px;
+  font-family: "Jost", sans-serif;
+  color: #203556;
+  }
+
+
+  .call{
+    position: absolute;
+top: 330px;
+left: 110px;
+height: 150px;
+overflow: hidden;
+font-family: "Jost", sans-serif;
+  color: #203556;
+  }
+  .call p{
+    font-size: 24px;
+    font-weight:600;
+    text-align: left;
+  }
+  .call h2{
+    position: absolute;
+    left: 100px;
+    top: 80px;
+    font-size: 30px;
+    font-weight: 700;  
+  }

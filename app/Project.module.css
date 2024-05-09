@@ -1,0 +1,33 @@
+.ph{
+    font-size: 80px;
+    font-weight: bold;
+text-align: center;
+margin-top: 100px;
+margin-bottom: 30px;
+}
+
+.g{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+gap: 30px;
+row-gap: 80px;
+position: relative;
+left: 155px;
+margin-bottom: 100px;
+}
+.g img{
+    cursor: pointer;
+}
+.g h1{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.g p{
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+

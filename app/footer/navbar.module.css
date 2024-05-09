@@ -1,0 +1,178 @@
+
+ /*-----------------------------------footer------------------------------*/
+
+ .footer{
+  position: relative;
+  width: 99dvw;
+  height: 70dvh;
+ }
+
+ .f1{
+  display: flex;
+position: absolute;
+gap: 100px;
+text-align: left;
+left: 190px;
+width: 80%;
+height: 100%;
+align-items: center;
+justify-content: center;
+line-height: 30px;
+ }
+
+ .f1 h1{
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 25px;
+ 
+}
+
+ .f1 p{
+  font-family: "Jost", sans-serif;
+width: 300px;
+font-size: 17px;
+color: #313131;
+padding-bottom: 10px;
+font-weight: 500;
+
+}
+
+
+.foc{
+  color: #353535;
+display: flex;
+position: absolute;
+bottom: 10px;
+left: 40%;
+letter-spacing: 5px;
+font-size: 12px;
+font-weight: bold;
+
+}
+.foc span{
+  position: absolute;
+left: -20px;
+top: 2px;
+font-weight: bolder;
+
+}
+
+
+  /*-----------------------------------5th----------------------------------*/
+
+  .connect{
+    width: 99dvw;
+    height: 100dvh;
+    position: relative;
+    overflow: hidden;
+  }
+  .connect0{
+    font-family: "Jost", sans-serif;
+    position: absolute;
+    right: 100px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor:pointer ;
+    color: #203556;
+  }
+  .connect0::after{
+    position: absolute;
+    left:0px;
+width: 100%;
+height: 1.3px;
+background-color: #203556;
+bottom: 0px;
+content: '';
+transition: all .3s ease-in-out;
+
+  }
+  .connect0:hover:after{
+    width: 0%;
+
+  }
+  .connect1{
+    color: #203556;
+    font-weight: bolder;
+    font-family: "Space Grotesk", sans-serif;
+    width: 1000px;
+    position: relative;
+    top: 20px;
+    left: 200px;
+    padding-bottom: 15px;
+  font-size: 120px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.068);
+  }
+  .connect2 {
+    position: relative;
+    left: 215px;
+    font-family: "Jost", sans-serif;
+color: #343842;
+    padding-top: 35px;
+  font-size: 32px;
+  }
+
+  .super{
+    margin-top: 30px;
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    background-image: url('../../images/S\ images/ns3.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: left;
+  }
+  .super::after{
+content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.238);
+z-index: 1;
+  }
+ .super1{
+  font-weight: bolder;
+    font-family: "Space Grotesk", sans-serif;
+  position: absolute;
+  left: 22%;
+  top: 80px;
+  color: white;
+  z-index: 2;
+
+  font-size: 72px;
+ }
+
+ .super2{
+  font-weight:bold;
+  font-family: "Jost", sans-serif;
+  position: absolute;
+  left: 40%;
+  top: 210px;
+  color: white;
+  font-size: 22px;
+  z-index: 2;
+
+ }
+
+ .super3{
+  z-index: 2;
+font-size: larger;
+font-weight:bold;
+font-family: "Jost", sans-serif;
+  position: absolute;
+  left: 43%;
+  top: 290px;
+  background-color: white;
+color: black;
+  font-size: 20px;
+  border: 1px solid white;
+  text-align: center;
+  padding: 15px 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+ }
+ .super3:hover{
+  background-color: black;
+color: aliceblue;
+ }
