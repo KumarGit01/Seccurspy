@@ -5,7 +5,6 @@ import Image from 'next/image';
 import ns1 from '../../images/S images/ns1.jpg';
 import ns2 from '../../images/S images/ns2.jpg';
 import ns3 from '../../images/S images/ns3.jpg';
-
 import img from '../../images/s14.jpeg';
 import { IoArrowForwardSharp } from "react-icons/io5";
 

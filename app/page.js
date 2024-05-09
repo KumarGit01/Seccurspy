@@ -8,97 +8,22 @@ import { MdOutlineCatchingPokemon } from "react-icons/md";
 import { IoMdAdd } from "react-icons/io";
 import Link from 'next/link';
 
-const textArray = ["Residential Security", "Transportation Security", "Fire and Life Safety Services", "Cybersecurity"];
-let cur = 0;
-let s = 0; 
-let types = 200; 
 
-function Call() {
-  const clas = document.getElementById('con'); 
-  let text = textArray[cur];
-  clas.innerHTML = text.slice(0, s);
-
-  if (s <= text.length+15) {
-    s++;
-  } else {
-    cur++;
-    s = 0;
-    if (cur >= textArray.length) {
-      cur = 0;
-    }
-  }
-  clas.style.animationDuration = (textArray.length * types+100) + "ms";
-  setTimeout(Call, types);
-}
-
-export default function Home({imageUrl}) {
-  const [isTranslated, setIsTranslated] = useState(false);
+export default function Home() {
   const [setOver, setSetOver] = useState('s1');
   const [slider, setSlider] = useState('si1');
   
-  const [isVisible, setIsVisible] = useState(false);
-  const imageRef = useRef(null);
 
-  useEffect(() => {
-    const onScroll = () => {
-      const triggerBottom = window.innerHeight / 9 * 10;
-      const serviceElement = document.getElementById('Call'); 
-  const se =   document.getElementById('Call1')
-  const se1 =   document.getElementById('Call2')
-
-
-  console.log(serviceElement)
-      if (serviceElement || se || se1  ) {
-        const boxTop = serviceElement.getBoundingClientRect().top;
-        const boxTop1 = serviceElement.getBoundingClientRect().top;
-        const boxTop2 = serviceElement.getBoundingClientRect().top;
-
-          if ((boxTop || boxTop1 || boxTop2 )  < triggerBottom) {
-            setIsTranslated(true);
-            setIsVisible(true)
-          } else {
-            setIsTranslated(false);
-          }
-        }
-      };
-    window.addEventListener('scroll', onScroll);
-  
-    return () => {
-      window.removeEventListener('scroll', onScroll);
-    };
-  }, []);
-  
-
-  useEffect(()=>{
-    Call()
-  })
-
-  const cla = isTranslated ? 'trnslate' : '';
  
+  
+
+ 
+
   const hanC = (clicked) => {
     setSetOver(clicked);
   };
 
 
- /* 
-  useEffect(()=>{
-const observer = new IntersectionObserver((entries)=>{
-entries.forEach((entry)=>{
-if(entry.isIntersecting){
-  setIsVisible(true);
-  observer.unobserve(entry.target);
-}
-})
-})
-observer.observe(imageRef.current);
-return () => {
-  observer.disconnect();
-{console.log(isVisible)}
-
-};
-  },[])
-
-  */
 
 
   return (
@@ -116,16 +41,13 @@ return () => {
       </div>
 
 
-<div className={style.Services}   
-style={{
-        display: isVisible ? 'block' : 'none',
-      }}> 
+<div className={style.Services}   > 
 <div className={style.container}>
-  <div  className={cla ? `${style.dropdown} ${style.trnslate}` : style.dropdown} id='Call' >All Services <span className={style.i}><FaArrowRight /> </span></div>
-  <h1  className={cla ? `${style.h} ${style.trnslate}` : style.h} id='Call'>Protection Services</h1>
-  <div   className={cla ? `${style.subheading} ${style.trnslate}` : style.subheading} id='Call'  >Our Services, Your Peace of Mind</div>
-  <p   className={cla ? `${style.subheadingsub} ${style.trnslate}` : style.subheadingsub} id='Call' >At Security, we offer a comprehensive range of security solutions designed to protect you, your assets, and your peace of mind.</p>
-  <ul  className={cla ? `${style.serviceslist} ${style.trnslate}` : style.serviceslist} id='Call'>
+  <div  className={`${style.dropdown} ${style.trnslate}`} >All Services <span className={style.i}><FaArrowRight /> </span></div>
+  <h1  className={`${style.h} ${style.trnslate}` } >Protection Services</h1>
+  <div   className={`${style.subheading} ${style.trnslate}`}>Our Services, Your Peace of Mind</div>
+  <p   className={ `${style.subheadingsub} ${style.trnslate}`}  >At Security, we offer a comprehensive range of security solutions designed to protect you, your assets, and your peace of mind.</p>
+  <ul  className={ `${style.serviceslist} ${style.trnslate}` } >
     <li><span><IoMdAdd/></span>Security Consulting</li>
     <li><span><IoMdAdd/></span>Alarm Systems and Monitoring</li>
     <li><span><IoMdAdd/></span>Access Control</li>
@@ -133,9 +55,9 @@ style={{
     <li><span><IoMdAdd/></span>Security Training</li>
     <li><span><IoMdAdd/></span>Retail Security</li>
   </ul>
-  <div className={cla ? `${style.metrics} ${style.trnslate}` : style.metrics} id='Call'>
+  <div className={ `${style.metrics} ${style.trnslate}`}>
     <div className={style.metric} >
-      <h2 className={cla ? `${style.metrich2} ${style.adct1}` : style.metrich2} id='Call'></h2>
+      <h2 className={ `${style.metrich2} ${style.adct1}`}></h2>
       <p>Assessment and Analysis</p>
     </div>
     <div className={style.metric}>
@@ -150,9 +72,7 @@ style={{
 </div>
 </div>
 
-<div className={style.fix} id='Call1' style={{
-        display: isVisible ? 'block' : 'none',
-      }}>
+<div className={style.fix} >
   <div className={style.con} id = 'con'>
 
   </div>
@@ -163,7 +83,7 @@ style={{
 <div className={style.sss}>
 
 <div className={style.ah}>
-  <h1 className={cla ? `${style.ah11} ${style.ahpro}` : style.ah11} id='Call1' ></h1>
+  <h1 className={ `${style.ah11} ${style.ahpro}`} ></h1>
   <span className={style.s1}>1.</span>
   <span className={style.s2}><FaGlobeAmericas/></span>
 <span className={style.hj}>Identification of Assets</span>
@@ -192,9 +112,7 @@ style={{
 </div>
 
 {/*------------------------------------------------------------------------ */}
-<div className={style.over1} id='Call2' style={{
-        display: isVisible ? 'block' : 'none',
-      }}>
+<div className={style.over1} >
   <Link href='/about'><h1 className={style.abo}>About Us</h1></Link>
   <h1  className={style.co}>Company Overview</h1>
 <h3 className={style.co1}>Discover Our Security Story</h3>
@@ -242,9 +160,7 @@ style={{
 
 {/*------------------------------------------------------------------------ */}
 
-<div className={style.project} id='Call2' style={{
-        display: isVisible ? 'block' : 'none',
-      }} >
+<div className={style.project}  >
 <h1 className={style.pro1}>Safety Projects</h1>
 <Link href='/projects'><p className={style.pro2}>Latest Projects</p></Link>
 <h1 className={style.pro3}>Securing Your Future Projects</h1>
@@ -280,13 +196,3 @@ style={{
 
 
 
-
-function YourComponent() {
-
-  return (
-    <div className="container">
-      <h1>Your Component</h1>
-      <Home imageUrl="../images/s11.jpg" />
-    </div>
-  );
-}
