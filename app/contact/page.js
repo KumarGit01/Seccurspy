@@ -1,6 +1,5 @@
 
-import Con from '../context/page'
-
+import styles from '../contact.module.css'
 const Contact = () => {
  
    
