@@ -14,11 +14,6 @@ export default function Home() {
   const [slider, setSlider] = useState('si1');
   
 
- 
-  
-
- 
-
   const hanC = (clicked) => {
     setSetOver(clicked);
   };
@@ -166,10 +161,10 @@ export default function Home() {
 <h1 className={style.pro3}>Securing Your Future Projects</h1>
 
 <div className={style.slider1}>
-<button onClick={() => setSlider('si1')}>1.</button>
-      <button onClick={() => setSlider('si2')}>2.</button>
-      <button onClick={() => setSlider('si3')}>3.</button>
-      <button onClick={() => setSlider('si4')}>4.</button>
+<button onClick={() => setSlider('si1')}><span>1.</span></button>
+      <button onClick={() => setSlider('si2')}><span>2.</span></button>
+      <button onClick={() => setSlider('si3')}><span>3.</span></button>
+      <button onClick={() => setSlider('si4')}><span>4.</span></button>
 <div className= {`${style[slider]}`}>
 </div>
   <h1 className= {`${slider === 'si1' ? style.stactive: style.st}`}>Risk Assure</h1>

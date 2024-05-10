@@ -7,7 +7,6 @@ const Footer = () => {
   const router = useRouter()
 
   const rout=()=>{
-
     router.push('/contact')
       }
   return (

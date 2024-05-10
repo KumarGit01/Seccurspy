@@ -176,3 +176,97 @@ color: black;
   background-color: black;
 color: aliceblue;
  }
+
+
+
+ @media(max-width:500px){
+  
+
+ .footer{
+  position: relative;
+  width: 99dvw;
+  height: 120dvh;
+  overflow: hidden;
+ }
+
+ .f1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+gap: 60px;
+left: 40px;
+text-align: center;
+line-height: 30px;
+ }
+
+
+.foc{
+  color: #353535;
+display: flex;
+position: absolute;
+bottom: 10px;
+left: 120px;
+letter-spacing: 5px;
+font-size: 12px;
+font-weight: bold;
+
+}
+.foc span{
+  position: absolute;
+left: -20px;
+top: 2px;
+font-weight: bolder;
+
+}
+
+
+  /*-----------------------------------5th----------------------------------*/
+
+  .connect{
+    width: 99dvw;
+    height: 100dvh;
+    position: relative;
+    overflow: hidden;
+  }
+  .connect0{
+    right: 50px;
+  }
+ 
+  .connect1{
+    width: 200px;
+    line-height: 90px;
+    top: 60px;
+    font-size: 90px;
+    left: 20px;
+   
+  }
+  .connect2 {
+    left: 30px;
+    top: 50px;
+  font-size: 25px;
+  }
+
+  .super{
+    margin-top: 80px;
+  }
+
+ .super1{
+ text-align: center;
+  left: 0px;
+  top: 0px;
+  font-size: 52px;
+ }
+
+ .super2{
+  left: 20%;
+  top: 200px;
+  font-size: 22px;
+ }
+
+ .super3{
+  left: 28%;
+  top: 260px;
+ }
+
+ }

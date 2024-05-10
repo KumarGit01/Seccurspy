@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image';
 import styles from '../service.module.css';
-import s14 from '../../images/s14.jpeg';
+import s14 from '../../images/S images/b1.jpg';
 import { useState } from 'react';
 import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa6";
@@ -40,7 +40,7 @@ setState(c)
       <h1 className={styles.edh}> Our Services, Your Peace of Mind</h1>
   <div >
     <div className={styles.eds}>
-      <Image src={s14} alt='i' />
+      <Image src={s14} alt='i' priority={false} placeholder = "blur" quality={5} />
    <div className={styles.tra}>
     <div >
     <h1>Electronic Security<span>{state === 'kk1' ? <FaPlus/> : <FaMinus/> }</span></h1>
@@ -114,7 +114,7 @@ monitoring station that can dispatch authorities if needed.</p>
     </div>
 
       </div>
-    <Image src={s14} alt='i' />
+    <Image src={s14} alt='i' priority={false} placeholder = "blur" quality={5} />
 
     </div>
     </div>

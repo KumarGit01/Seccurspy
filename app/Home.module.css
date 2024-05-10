@@ -196,7 +196,6 @@ transition: all .2s linear;
   .dropdown span {
     top: 4px;
 transition: all .2s linear;
-
     margin-left: 5px;
     font-weight: bolder;
     font-size: 28px;
@@ -284,7 +283,7 @@ transition: transform 1.4s ease-in-out .1s;
   
   .metrich2::before {
     content: '0%';
-    animation: countup 3s forwards ease-in-out 5s ;
+    animation: countup 3s forwards ease-in-out  ;
 
   }
   
@@ -425,7 +424,6 @@ animation: 14s ro ease-in-out infinite;
   }
 }
 .hj{
-  
   color: white;
   font-size: 22px;
   font-weight: 700;
@@ -889,9 +887,7 @@ color: white;
   .st{
     position: absolute;
 color: white;
-
 top: -50px;
-
 z-index: 4;
 font-size: 40px;
 transition: all .5s ease-in .2s;
@@ -927,5 +923,837 @@ border: 1px solid white;
   .stactive1:hover{
 background-color: #000000;
 border: 1px solid black;
+
+  }
+
+
+
+
+@media(max-width:1280px){
+  .convexshape {
+    position: absolute;
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.136);
+    top:0px;
+    left: -300px;
+    width: 50%; 
+    height:50%; 
+    clip-path: circle(50% at 50% 50%);
+scale: 3;
+  }
+ 
+  .Services{
+   
+      left: 120px;
+    margin-left: 10px;
+    }
+
+    .metrics {
+      right: -40px;
+  transition: transform 1.4s ease-in-out .1s;
+    }
+
+    
+    .sss{
+      
+      gap: 10px;
+    
+    }
+   
+    
+     .ah .s1{
+     left: 50px;
+      width: 24px;
+      height: 24px;
+      
+    }
+    
+
+  
+    .hj{
+      
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .pj{
+      width: 250px;
+      top: 230px;
+      position: absolute;
+      color: #FFFEE7;
+      font-size: 14px;
+    }
+    
+    
+    
+
+
+ .over1 .co{
+left: 144px;
+font-size: 80px;
+ }
+
+ .imghol{
+  right: 20px;
+width: 300px;
+height: 400px ;
+}
+
+ .over1 .co1{
+  top: 280px;
+left: 155px;
+  font-size: 28px;
+   }
+
+
+
+   .s{
+    top: 390px;
+    left: 160px;
+   }
+   .s2 p ,.s2 p,.s3 p{
+    display: none;
+   }
+ 
+   
+
+
+   .act{
+    font-size: 17px;
+width: 480px;
+
+   }
+
+
+  .per{
+    width: 50%;
+  }
+
+.per1{
+  width: 460px;
+}
+
+
+/*-----------------------------------6th----------------------------------*/
+
+.project{
+  height: 110dvh;
+}
+
+.pro1{
+  position: absolute;
+top: -40px;
+left: 120px;
+text-align: center;
+  font-size: 90px;
+}
+
+.pro2{
+  top: 180px;
+}
+
+.pro3{
+  top: 166px;
+}
+
+.slider1{
+  top: 300px;
+}
+  
+
+  }
+
+
+
+
+  
+@media(max-width:1024px){
+  .convexshape {
+    top:240px;
+    left: -160px;
+    width: 40%; 
+    height:40%; 
+  }
+ 
+  
+    .mid h1{
+      font-size: 60px;
+    line-height: 75px;   
+    }
+      
+  .Services{
+      left: 55px;
+    margin-left: 10px;
+    width: 83dvw;
+    height: 100dvh;
+    }
+
+    .h{
+      line-height: 90px;
+      font-size: 90px;
+    }
+  
+    .subheading {
+      font-size: 30px; 
+    }
+
+    .subheadingsub{
+      width: 500px;
+    }
+    
+    .serviceslist {
+      bottom: 150px;
+      column-gap: 40px;
+    }
+
+    .metrich2 {
+      font-size: 72px;
+      line-height: 100px;
+    }
+    
+    
+    
+    .metric p {
+      font-size: 17px;
+    }
+    .metrics {
+line-height: 10px;
+      right: -150px;
+  transition: transform 1.4s ease-in-out .1s;
+    }
+
+ 
+   
+    
+    /*----------------------------3rd------------------------------*/
+ .fix{
+  height: 58dvh;
+  background: none;
+ }
+
+
+.over{
+  position: absolute;
+  bottom: 0px;
+  width: 100dvw;
+  height: 58dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+ 
+}
+
+.sss{
+  background-image:url('../images/S\ images/ns3.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  gap: 50px;
+
+}
+
+ .ah{
+left: 40px;
+ }
+ 
+.hj{
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.pj{
+  width: 220px;
+  top: 230px;
+  position: absolute;
+  color: #FFFEE7;
+  font-size: 14px;
+}
+
+
+.ahpro{
+  width: 315%;
+   }
+
+    
+
+
+ .over1 .co{
+left: 80px;
+font-size: 70px;
+ }
+
+ .abo{
+  right: 80px;
+ }
+ .imghol{
+  right: -15px;
+  top: -25px;
+width: 240px;
+height: 340px ;
+}
+
+ .over1 .co1{
+  top: 280px;
+left: 90px;
+  font-size: 28px;
+   }
+
+
+
+   .s{
+    top: 390px;
+    left: 96px;
+   }
+  
+   .act{
+    font-size: 16px;
+width: 460px;
+left: 100px;
+   }
+
+
+  .per{
+    width: 50%;
+  left: 100px;
+
+  }
+
+.per1{
+  width: 440px;
+}
+
+
+/*-----------------------------------6th----------------------------------*/
+
+.project{
+  height: 110dvh;
+}
+
+.pro1{
+top: -40px;
+left: 10px;
+text-align: center;
+  font-size: 90px;
+padding-bottom: 20px;
+border-bottom: 1px solid rgba(2, 2, 2, 0.075);
+}
+
+.pro2{
+  right: 50px;
+  top: -110px;
+  
+}
+
+.pro3{
+  left: 86px;
+  top: 150px;
+}
+
+.slider1{
+  top: 270px;
+}
+  
+
+  }
+
+
+  
+  
+@media(max-width:800px){
+  .convexshape {
+    top:240px;
+    left: -160px;
+    width: 40%; 
+    height:40%; 
+  }
+ .p1{
+  font-size: 18px;
+ }
+  .mid .p2 {
+    width: 300px;
+  }
+    .mid h1{
+      font-size: 50px;
+      width: 300px;
+    line-height: 65px;   
+    }
+      
+
+  .Services{
+    overflow: hidden;
+      left: 5px;
+      width: 100dvw;
+    }
+.dropdown{
+  top: -20px;
+  font-weight: 300;
+}
+.dropdown span{
+  top: 0px;
+ font-size: 24px; 
+}
+
+    .h{
+      line-height: 90px;
+      font-size: 90px;
+      width: 450px;
+    }
+  
+    .subheading {
+      font-size: 26px; 
+    }
+
+    .subheadingsub{
+      font-size: 16px; 
+      width: 420px;
+    }
+    
+    .serviceslist {
+      bottom: 120px;
+    }
+
+    
+    .metric p {
+      font-size: 15px;
+    }
+    .metrics {
+      right: -90px;
+    }
+
+ 
+   
+    
+    /*----------------------------3rd------------------------------*/
+ .fix{
+  height: 90dvh;
+  top: 40px;
+ }
+
+
+.over{
+  height: 100%; 
+}
+
+.sss{
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+.ah .s2{
+  top: 20px;
+  left: 470px;
+}
+.ah .s1{
+  left: -40px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+}
+.sss::after{
+background-color: rgba(0, 0, 0, 0.162);
+width: 100%;
+backdrop-filter: blur(4px);
+height: 100%;
+position: absolute;
+content: '';
+}
+ .ah{
+  top: 10px;
+left: -160px;
+ }
+ 
+.hj{
+  width: 420px;
+  position: absolute;
+  top: 10px;
+}
+.pj{
+  width: 460px;
+  top: 40px;
+  font-size: 16px;
+}
+
+.ah11{
+  top: 116px;
+  left: 518px;
+  width:4px;
+  height: 0%;
+  
+   }
+.ahpro{
+  height: 350%;
+   }
+
+    
+
+
+ .over1 .co{
+left: 16px;
+font-size: 60px;
+ }
+
+ .abo{
+  right: 30px;
+ }
+
+
+ .over1 .co1{
+  top: 250px;
+left: 23px;
+  font-size: 28px;
+   }
+
+   .imghol{
+    right: -100px;
+    top: -35px;
+  width: 240px;
+  height: 340px ;
+  }
+
+   .s{
+    top: 350px;
+    left: 26px;
+   }
+  .heha p{
+    font-size: 16px;
+  }
+   .act{
+width: 360px;
+left: 80px;
+height: 260px;
+overflow-y:scroll;
+}
+
+
+  .per{
+    width: 50%;
+  left: 80px;
+  }
+
+.per1{
+  width: 350px;
+}
+
+
+/*-----------------------------------6th----------------------------------*/
+
+.project{
+  height: 110dvh;
+}
+
+.pro1{
+top: -40px;
+left: -60px;
+text-align: center;
+  font-size: 60px;
+padding-bottom: 20px;
+border-bottom: 1px solid rgba(2, 2, 2, 0.075);
+}
+
+.pro2{
+  right: 50px;
+  top: -140px;
+  
+}
+
+.pro3{
+  left: 30px;
+  top: 100px;
+}
+
+.slider1{
+  top: 240px;
+}
+  
+
+  }
+
+
+
+
+
+    
+  
+@media(max-width:500px){
+  .convexshape {
+    top:290px;
+    left: 160px;
+    width: 30%; 
+    height:30%; 
+  scale: 3.7;
+  }
+  .mid{
+    top: 240px;
+  }
+ .p1{
+  text-align: center;
+top: -30px;
+  position: absolute;
+  left: 80px;
+ }
+  .mid .p2 {
+    text-align: center;
+    position: absolute;
+    left: 50px;
+    top: 280px;
+    width: 300px;
+    backdrop-filter: blur(0px);
+  }
+    .mid h1{
+      position: absolute;
+      left: 50px;
+      top: 15px;
+      text-align: center;
+      font-size: 50px;
+      width: 300px;
+    line-height: 65px;   
+    }
+      
+
+    .dropdown{
+      font-weight: 300;
+      font-size: 17px;
+    }
+    .dropdown span{
+      top: 0px;
+     font-size: 20px; 
+    }
+      
+  .dropdown::after{
+width: 70%;
+  }
+  
+  .dropdown:hover .i{
+    margin-left: 10px;
+  }
+  .Services{
+    top: 50px;
+    height: 160dvh;
+    overflow: hidden;
+      left: -4px;
+      width: 100dvw;
+    }
+
+
+
+    .h{
+      line-height: 90px;
+      font-size: 80px;
+      width: 450px;
+    }
+  
+    .subheading {
+      font-size: 26px; 
+    }
+
+    .subheadingsub{
+      font-size: 16px; 
+      width: 420px;
+    }
+    
+    .serviceslist {
+      bottom: 80px;
+    }
+
+    
+    .metric p {
+      font-size: 15px;
+    }
+    .metrics {
+      text-align: center;
+      top: 430px;
+      right: 90px;
+    }
+
+ 
+   
+    
+    /*----------------------------3rd------------------------------*/
+ .fix{
+  height: 155dvh;
+  top: 40px;
+ }
+
+
+.over{
+  text-align: center;
+  height: 100%; 
+}
+
+.sss{
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+.ah .s2{
+  top: 160px;
+  left: 180px;
+}
+.ah .s1{
+  left: -40px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+}
+.sss::after{
+backdrop-filter: blur(0px);
+}
+ .ah{
+  top: 10px;
+left: -160px;
+ }
+ 
+.hj{
+  width: 460px;
+  position: absolute;
+  top: 8px;
+backdrop-filter: blur(10px);
+}
+.pj{
+backdrop-filter: blur(10px);
+background-color: #0000003d;
+
+  width: 460px;
+  top: 40px;
+  font-size: 16px;
+}
+
+.ahpro{
+  height: 0%;
+   }
+
+    
+
+
+ .over1 .co{
+left: 16px;
+font-size: 80px;
+line-height: 90px;
+ }
+
+ .abo{
+  font-size: 18px;
+  right: 40px;
+ }
+
+
+ .over1 .co1{
+  top: 320px;
+left: 23px;
+  font-size: 28px;
+   }
+
+   .imghol{
+    right: -100px;
+    top: -35px;
+  width: 240px;
+  height: 340px ;
+  display: none;
+  }
+
+   .s{
+    top: 400px;
+    left: 26px;
+   }
+  .heha p{
+    font-size: 16px;
+  }
+   .act{
+width: 360px;
+left: 80px;
+height: 260px;
+overflow-y:visible;
+}
+
+
+  .per{
+    width: 50%;
+  left: 40px;
+  bottom: -16px;
+  }
+
+.per1{
+  width: 350px;
+}
+
+
+/*-----------------------------------6th----------------------------------*/
+
+.project{
+  height: 110dvh;
+}
+
+.pro1{
+top: 20px;
+left: 50px;
+line-height: 80px;
+  font-size: 80px;
+padding-bottom: 20px;
+border-bottom: 1px solid rgba(2, 2, 2, 0.075);
+}
+
+.pro2{
+  right: 50px;
+  top: -40px;
+  
+}
+
+.pro3{
+  left: 80px;
+  font-size: 24px;
+  top: 220px;
+}
+
+.slider1{
+  top: 300px;
+}
+.slider1 button{
+  width: 20px;
+  height: 20px;
+top: 320px;
+}
+
+.slider1 button span{
+position: absolute;
+top: -40px;
+left: 10px;
+font-size: 30px;
+font-weight: bolder;
+color: white;
+}
+.stactive{
+  position: absolute;
+  color: white;
+  z-index: 4;
+  top: -30px;
+  font-size: 50px;
+  transition: all .3s ease-in .4s;
+  font-weight: bold;
+  transform: translatey(130px);
+}
+.stactive1{
+  position: absolute;
+  color: white;
+  z-index: 4;
+  font-weight: bold;
+top: 30px;
+border: 1px solid white;
+  font-size: 20px;
+  border-radius: 40px;
+  cursor: pointer ;
+  padding: 5px 26px;
+  transition: all .5s ease-in ;
+  transform: translateY(180px);
+}
+
+.stactive1:hover{
+background-color: #000000;
+border: 1px solid black;
+
+}
+
+
+
 
   }

@@ -5,7 +5,7 @@ import Image from 'next/image';
 import ns1 from '../../images/S images/ns1.jpg';
 import ns2 from '../../images/S images/ns2.jpg';
 import ns3 from '../../images/S images/ns3.jpg';
-import img from '../../images/s14.jpeg';
+import img from '../../images/S images/ns2.jpg';
 import { IoArrowForwardSharp } from "react-icons/io5";
 
 const About = () => {
@@ -26,7 +26,7 @@ const About = () => {
 </div>
 
 <div>
-  <Image src={img} alt='hh' />
+  <Image src={img} alt='hh'  priority={false} placeholder = "blur" quality={5}/>
 </div>
 </div>
 <p>Welcome to Secury Solutions, your partner in comprehensive security services.
@@ -42,7 +42,7 @@ const About = () => {
 <div className={styles.slider}  > 
   <div className={`${styles.slider1} ${state === 'left'? styles.s1left : styles.s1right } `}>
 <div className={styles.s1}>
-  <Image src={ns1} alt='ii' /><br/>
+  <Image src={ns1} alt='ii' priority={false} placeholder = "blur" quality={5} /><br/>
   <h1>Company Founding</h1>
   <p>
 John Smith and Jane Doe co-found Secury Security Solutions. The company starts as a small local security services provider.
@@ -54,12 +54,12 @@ John Smith and Jane Doe co-found Secury Security Solutions. The company starts a
 <p>
 Secury Security Solutions expands its service area to neighboring cities and regions. The company establishes its first regional office.
 <br/>1995</p>
-<Image src={ns2} alt='ii'  />
+<Image src={ns2} alt='ii'  priority={false} placeholder = "blur" quality={5} />
 
 </div>
 
 <div className={styles.s3}>
-<Image src={ns3} alt='ii' /><br/>
+<Image src={ns3} alt='ii' priority={false} placeholder = "blur" quality={5} /><br/>
 <h1>Introduction of Advanced Technology</h1>
 <p>
 The company embraces technology, implementing a state-of-the-art tracking system that provides real-time visibility of shipments to clients.
@@ -72,7 +72,7 @@ The company embraces technology, implementing a state-of-the-art tracking system
 The company gains national recognition for its Achieves ISO 9001 certification for quality management. Expands into the government and critical infrastructure security markets. 2020: Global Expansion
 <br/>
 2015</p>
-<Image src={ns2} alt='ii' />
+<Image src={ns2} alt='ii'  priority={false} placeholder = "blur" quality={5}/>
 
 </div>
 </div>
