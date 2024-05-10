@@ -202,23 +202,12 @@ line-height: 30px;
 
 
 .foc{
-  color: #353535;
-display: flex;
-position: absolute;
-bottom: 10px;
-left: 120px;
-letter-spacing: 5px;
-font-size: 12px;
-font-weight: bold;
+  
+left: 60px;
 
+width: 100%;
 }
-.foc span{
-  position: absolute;
-left: -20px;
-top: 2px;
-font-weight: bolder;
 
-}
 
 
   /*-----------------------------------5th----------------------------------*/
@@ -253,19 +242,19 @@ font-weight: bolder;
 
  .super1{
  text-align: center;
-  left: 0px;
+  left: -10px;
   top: 0px;
   font-size: 52px;
  }
 
  .super2{
-  left: 20%;
+  left: 50px;
   top: 200px;
   font-size: 22px;
  }
 
  .super3{
-  left: 28%;
+  left: 20%;
   top: 260px;
  }
 

@@ -1485,7 +1485,7 @@ border-bottom: 1px solid rgba(2, 2, 2, 0.075);
   }
   .mid{
     top: 240px;
-    left: -10px;
+    left: -14px;
   }
  .p1{
   text-align: center;
@@ -1540,23 +1540,31 @@ width: 70%;
 
     .h{
       line-height: 90px;
-      font-size: 80px;
+      font-size: 70px;
       width: 450px;
     }
   
     .subheading {
-      font-size: 26px; 
+      font-size: 22px; 
     }
 
     .subheadingsub{
       font-size: 16px; 
-      width: 420px;
+      width: 380px;
     }
     
     .serviceslist {
-      bottom: 80px;
+      bottom: 100px;
     }
-
+    .serviceslist {
+      column-gap: 0px;
+    }
+    .serviceslist li {
+      font-size: 15px;
+    }
+    .serviceslist li span{
+      font-size: 20px;
+    }
     
     .metric p {
       font-size: 15px;
@@ -1564,7 +1572,7 @@ width: 70%;
     .metrics {
       text-align: center;
       top: 430px;
-      right: 90px;
+      right: 40px;
     }
 
  
@@ -1586,42 +1594,52 @@ width: 70%;
   gap: 20px;
   flex-direction: column;
   align-items: center;
+  background-image: url('../images/ff.jpeg');
 }
 .ah .s2{
-  top: 160px;
-  left: 180px;
+  top: 166px;
+  left: 160px;
 }
 .ah .s1{
-  left: -40px;
-  top: 10px;
+  left: 30px;
+  top: 5px;
   width: 30px;
   height: 30px;
 }
 .sss::after{
 backdrop-filter: blur(0px);
+background-color: rgba(0, 0, 0, 0.01);
+
 }
  .ah{
   top: 10px;
-left: -160px;
+left: -136px;
  }
  
 .hj{
-  width: 460px;
+  width: 400px;
   position: absolute;
   top: 8px;
 backdrop-filter: blur(10px);
+
 }
 .pj{
 backdrop-filter: blur(10px);
-background-color: #0000003d;
-
-  width: 460px;
+left: 4px;
+  width: 396px;
   top: 40px;
   font-size: 16px;
 }
+.ah11{
+  top: 240px;
+  left: 210px;
+  width:4px;
+  height: 0px;
+
+   }
 
 .ahpro{
-  height: 0%;
+  height: 340%;
    }
 
     
@@ -1629,12 +1647,12 @@ background-color: #0000003d;
 
  .over1 .co{
 left: 16px;
-font-size: 80px;
+font-size: 78px;
 line-height: 90px;
  }
 
  .abo{
-  font-size: 18px;
+  font-size: 17px;
   right: 40px;
  }
 
@@ -1642,14 +1660,10 @@ line-height: 90px;
  .over1 .co1{
   top: 320px;
 left: 23px;
-  font-size: 28px;
+  font-size: 26px;
    }
 
    .imghol{
-    right: -100px;
-    top: -35px;
-  width: 240px;
-  height: 340px ;
   display: none;
   }
 
@@ -1658,19 +1672,19 @@ left: 23px;
     left: 26px;
    }
   .heha p{
-    font-size: 16px;
+    font-size: 15px;
   }
    .act{
-width: 360px;
+width: 280px;
 left: 80px;
-height: 260px;
-overflow-y:visible;
+height: 370px;
+overflow-y:scroll;
 }
 
 
   .per{
     width: 50%;
-  left: 40px;
+  left: 0px;
   bottom: -16px;
   }
 
@@ -1686,8 +1700,8 @@ overflow-y:visible;
 }
 
 .pro1{
-top: 20px;
-left: 50px;
+top: 30px;
+left: 34px;
 line-height: 80px;
   font-size: 80px;
 padding-bottom: 20px;
@@ -1695,13 +1709,13 @@ border-bottom: 1px solid rgba(2, 2, 2, 0.075);
 }
 
 .pro2{
-  right: 50px;
+  right: 20px;
   top: -40px;
   
 }
 
 .pro3{
-  left: 80px;
+  left: 27px;
   font-size: 24px;
   top: 220px;
 }
