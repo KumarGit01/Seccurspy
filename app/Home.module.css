@@ -1478,13 +1478,14 @@ border-bottom: 1px solid rgba(2, 2, 2, 0.075);
 @media(max-width:500px){
   .convexshape {
     top:290px;
-    left: 160px;
+    left: 120px;
     width: 30%; 
     height:30%; 
   scale: 3.7;
   }
   .mid{
     top: 240px;
+    left: -10px;
   }
  .p1{
   text-align: center;
