@@ -5,19 +5,25 @@
 html,
 body {
   scroll-behavior: smooth;
+  scroll-snap-align: center;
   background-color: white;
   padding: 0;
   margin: 0;
   overflow-x: hidden;
 }
 
+.tsp,.tsp1{
+  display: none;
+}
 
 
 .link{
   color: inherit;
   text-decoration: none;
 }
-
+.Title  h2{
+  display: none;
+}
 .hed{
   position: fixed;
   top: 0px;
@@ -58,6 +64,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 .Title{
   display: flex;
   align-items: center;
+  justify-content: center;
   color: white;
   font-size: 34px;
   width: 200px;
@@ -159,54 +166,97 @@ background-color: red;
   }
 
  
-
   @media(max-width:500px){
     
 .hed{
   flex-direction: column;
-background-color: black;
+background-color: rgba(0, 0, 0, 0.889);
 }
 
-.Title{
-  text-align: center;
-justify-content: center;
-  border-right: 0px solid  rgba(255, 255, 255, 0.315);
- 
+.Title  h1{
+position: relative;
+top: -5px;
+}
+.Title  h2{
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  display: block;
+  width: 100px;
+  height: 63px;
+  background-image: url('../images/slogo.png');
+  background-size: contain;
+}
+.Title1  h2{
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  display: block;
+  width: 100px;
+  height: 63px;
+  background-image: url('../images/slogo.png');
+  background-size: contain;
+}
+.tsp{
+  position: absolute;
+  top: 22px;
+  display: block;
+  cursor: pointer;
+  right: 36px;
+  transition: all .3s ease-in-out;
 }
 
-
+  .na{
+  position: fixed;
+  top: 60px;
+  transform: translateX(100%) ;
+  transition: all .4s ease-in-out;
+  width: 100dvw;
+  height: 100dvh;
+}
+.na1{
+  position: fixed;
+  top: 60px;
+  width: 100dvw;
+  height: 100dvh;
+  transform: translateX(0%);
+  transition: all .4s ease-in-out;
+}
 .me{
   background-color: black;
   font-weight:600;
   color:white;
   font-size: 16px;
-  position: relative;
+  position: fixed;
+  top: 30px;
   left: 0px;
-  top: 40px;
-  gap: 42px;
+  gap: 4px;
   flex-direction: column;
   display:flex;
-  transition: all .1s ease-in-out;
-  width: 100dvw;
-  height: 100dvh;
+  transition: all .5s ease-in-out;
   text-align: center;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+}
+.me a,.me1 a{
+  padding: 50px 0px;
 }
 
-.me a{
-padding: 30px 10px;
-position: relative;
-z-index: 13;
+.Title,.Title1{
+  border-right: 0px;
 }
+
+
 .active{
-  height: 134px;
- clip-path: polygon(100% 0, 100% 100%, 0 calc(100% - 15px), 0 0);
+  height: 24px;
+ clip-path:none;
 background-color: red;
 }
-.me a:hover{
-   color:black;
-}
 
-.me a::after{
+
+.me a::after,
+  .me1 a::after{
  position: absolute;
  content: '';
  left: 0px;
@@ -219,15 +269,33 @@ background-color: red;
  transition: height .3s ease-in-out;
  clip-path: none;
 }
-.me a:hover::after{
- height: 92%;
+.me a:hover::after,
+  .me1 a:hover::after{
+ height: 100%;
+}
+
+.me1{
+  background-color: black;
+  font-weight:600;
+  color:white;
+  font-size: 16px;
+  position: fixed;
+  top: 10px;
+  left: 0px;
+  gap: 4px;
+  flex-direction: column;
+  display:flex;
+  transition: all .5s ease-in-out;
+  text-align: center;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
 }
 
 
 
-.hed1{
- display: none;
 
-}
+
+
 
   }

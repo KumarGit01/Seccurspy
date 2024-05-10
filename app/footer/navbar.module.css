@@ -242,19 +242,19 @@ width: 100%;
 
  .super1{
  text-align: center;
-  left: -10px;
-  top: 0px;
-  font-size: 52px;
+  left: 1px;
+  top: 20px;
+  font-size: 40px;
  }
 
  .super2{
   left: 50px;
-  top: 200px;
+  top: 180px;
   font-size: 22px;
  }
 
  .super3{
-  left: 20%;
+  left: 22%;
   top: 260px;
  }
 
