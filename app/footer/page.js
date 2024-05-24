@@ -26,25 +26,25 @@ const Footer = () => {
     <div className={style.footer}>
     <div className={style.f1}>
     <div>
-    <h1>1st Office</h1>
-  <p>555-1296</p>
-  <p>info@secury.com</p>
-  <p>123 Main Street, Suite 200 City: Anytown State: StateName</p>
+    <h1>Head Office</h1>
+  <p>+91 96323 94942</p>
+  <p>info@securspy.com</p>
+  <p>02 SRC Towers Dommasandra, Sarjapura main road, Bengaluru, Karnataka 562125</p>
   </div>
   <div>
-  <h1>2st Office</h1>
-  <p>+33 1 23 45 9966<br /></p>
-  <p>info@securyparis.com<br /></p>
-  <p>123 Rue de la Paix, 75002 Paris, France</p>
+  <h1>Sub Branch-1</h1>
+  <p>+91 89513 51408<br /></p>
+  <p>info@securspy.com<br /></p>
+  <p>29th A Cross Rd, Geetha Colony, 4th T Block East, Jayanagar, Bengaluru, Karnataka 560041 </p>
   </div>
   <div>
-  <h1> 3rd Office </h1>
-  <p>+49 30 12343693<br /></p>
-  <p>info@securyberlin.com<br /></p>
-  <p>Mauerstrasse 45, 10117 Berlin, Germany</p>
+  <h1> Sub Branch-2 </h1>
+  <p>+91 63629 49812<br /></p>
+  <p>info@securspy.com<br /></p>
+  <p>Nearby Address: B74, 3rd Cross Rd, Peenya II Phase, Peenya, Bengaluru, Karnataka 560058</p>
   </div>
   </div>
-  <h1 className={style.foc}><span><MdOutlineCopyright/></span> Securspy 2024 - Bangolore </h1>
+  <h1 className={style.foc}><span><MdOutlineCopyright/></span> Securspy 2019 - Bengaluru </h1>
   </div>
   </>
 

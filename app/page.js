@@ -1,5 +1,5 @@
 "use client"
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import style from './Home.module.css'; 
 import { FaArrowRight,FaGlobeAmericas } from "react-icons/fa";
 import { GiMoebiusTriangle } from "react-icons/gi";
@@ -8,6 +8,11 @@ import { MdOutlineCatchingPokemon } from "react-icons/md";
 import { IoMdAdd } from "react-icons/io";
 import Link from 'next/link';
 
+import { FaFacebookMessenger } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { IoLogoYoutube } from "react-icons/io5";
+import { FaLinkedin } from "react-icons/fa";
+import { SiGooglemaps } from "react-icons/si";
 
 export default function Home() {
   const [setOver, setSetOver] = useState('s1');
@@ -29,9 +34,27 @@ export default function Home() {
      <div className={style.hn} > 
      </div>
         <div className={style.mid}>
-<p className={style.p1} >ENSURING YOUR SAFETY</p>
+<p className={style.p1} >YOUR SECURITY OUR PRIORITY</p>
 <h1>EXPERIENCE SECURITY LIKE NEVER BEFORE!</h1>
-<p className={style.p2}><span>Social Engineering</span>: This involves manipulating individuals into divulging confidential information or taking specific actions.</p>
+<p className={style.p2}><span>Stay Secure</span>: We are a leading provider of surveillance systems and solutions for residential and commercial customers</p>
+      <div className={style.midlogo}>
+   <Link href=':https://www.facebook.com/profile.php?id=61550127482080&mibextid=ZbWKwL
+' >
+    <span className={style.face}><FaFacebookMessenger /></span></Link>
+      <Link href='https://www.instagram.com/securspy_intelligence_systems_?igsh=MXBjazluMDdqaDJ1NA==
+'>    <span className={style.face}><FaInstagram /></span></Link>
+     
+     <Link href='https://youtube.com/@Securspy?si=wWE7nX_lfV77gZLl
+'>  <span className={style.face}><IoLogoYoutube /></span>
+     </Link>
+     <Link href='https://www.linkedin.com/company/securspy/
+'>  <span className={style.face}><FaLinkedin /></span>
+     </Link>
+     <Link href=' https://maps.app.goo.gl/r4S11Z2qofrDhhTo9
+'>  <span className={style.face}><SiGooglemaps /></span>
+
+     </Link>
+       </div>
         </div>
       </div>
 
@@ -41,27 +64,29 @@ export default function Home() {
   <div  className={`${style.dropdown} ${style.trnslate}`} >All Services <span className={style.i}><FaArrowRight /> </span></div>
   <h1  className={`${style.h} ${style.trnslate}` } >Protection Services</h1>
   <div   className={`${style.subheading} ${style.trnslate}`}>Our Services, Your Peace of Mind</div>
-  <p   className={ `${style.subheadingsub} ${style.trnslate}`}  >At Security, we offer a comprehensive range of security solutions designed to protect you, your assets, and your peace of mind.</p>
+  <p   className={ `${style.subheadingsub} ${style.trnslate}`}  >At Securspy, we offer a wide range of security solutions designed to protect you, your assets, and your peace of mind.</p>
+  <Link href='/service'>
   <ul  className={ `${style.serviceslist} ${style.trnslate}` } >
-    <li><span><IoMdAdd/></span>Security Consulting</li>
+    <li><span><IoMdAdd/></span>Video Surveillance Systems </li>
     <li><span><IoMdAdd/></span>Alarm Systems and Monitoring</li>
-    <li><span><IoMdAdd/></span>Access Control</li>
-    <li><span><IoMdAdd/></span>Video Surveillance</li>
-    <li><span><IoMdAdd/></span>Security Training</li>
-    <li><span><IoMdAdd/></span>Retail Security</li>
+    <li><span><IoMdAdd/></span>Access Control & Attandance Systems </li>
+    <li><span><IoMdAdd/></span>Video Door Phones </li>
+    <li><span><IoMdAdd/></span>Digital &  Smart Locks</li>
+    <li><span><IoMdAdd/></span>Burglar & Biometric Surveillance Systems</li>
   </ul>
+  </Link>
   <div className={ `${style.metrics} ${style.trnslate}`}>
     <div className={style.metric} >
       <h2 className={ `${style.metrich2} ${style.adct1}`}></h2>
-      <p>Assessment and Analysis</p>
+      <p>Projects Completed</p>
     </div>
     <div className={style.metric}>
-      <h2 className={style.metrich2}></h2>
-      <p>Strategy Development</p>
+      <h2 className={style.metrich21}></h2>
+      <p>Successfull Projects</p>
     </div>
     <div className={style.metric}>
-      <h2 className={style.metrich2}></h2>
-      <p>Ongoing Improvement</p> 
+      <h2 className={style.metrich212}></h2>
+      <p>Years In Business</p> 
     </div>
   </div>
 </div>
@@ -122,14 +147,14 @@ export default function Home() {
   </div>
 
   <div className={` ${setOver === 's1' ? style.act : style.s1}`}>
-<p>Welcome to Secury Solutions, your partner in comprehensive security services. With a commitment to excellence and a focus on innovation, we're dedicated to safeguarding your world. Our mission is to provide top-notch security solutions that empower you to live and work with confidence.Secury Established in 2005, SecureGuard Solutions was born out of a vision to redefine security in a rapidly changing world. Founded by Jane Anderson, a security industry veteran with a passion for protecting communities, our company has grown to become a trusted name in security services.
+<p>Welcome to Securspy Solutions, your partner in comprehensive security services. With a commitment to excellence and a focus on innovation, we're dedicated to safeguarding your world. Our mission is to provide top-notch security solutions that empower you to live and work with confidence.Secury Established in 2019, Securspy Solutions was born out of a vision to redefine security in a rapidly changing world. Founded by Nithesh JC, a security industry veteran with a passion for protecting communities, our company has grown to become a trusted name in security services.
 </p>
 </div>
 <div className={` ${setOver === 's2' ? style.act : style.s2}`}>
-<p>At Secury , our mission is simple but profound: to safeguard your world, one step at a time. We believe that security is not just a service; it's a commitment to the safety, well-being, and peace of mind of our clients.Together, we can create a safer world. Whether you're a business owner, homeowner, or community leader, we invite you to join us in our mission to secure your world, one step at a time.</p>
+<p>At Securspy , our mission is simple but profound: to safeguard your world, one step at a time. We believe that security is not just a service; it's a commitment to the safety, well-being, and peace of mind of our clients.Together, we can create a safer world. Whether you're a business owner, homeowner, or community leader, we invite you to join us in our mission to secure your world, one step at a time.</p>
 </div>
 <div className={` ${setOver === 's3' ? style.act : style.s3}`}>
-<p>At Secury, our vision is clear: to redefine security and create a safer tomorrow for our clients, communities, and the world at large. We are dedicated to being at the forefront of innovation and excellence in the security industry.We invite you to join us on our journey to redefine security for a safer tomorrow. Together, we can shape a future where safety is not just a goal but a reality.Thank you for considering Secury as your trusted partner in protection. We look forward to working with you to achieve our shared vision of a safer world.</p>
+<p>At Securspy, our vision is clear: to redefine security and create a safer tomorrow for our clients, communities, and the world at large. We are dedicated to being at the forefront of innovation and excellence in the security industry.We invite you to join us on our journey to redefine security for a safer tomorrow. Together, we can shape a future where safety is not just a goal but a reality.Thank you for considering Secury as your trusted partner in protection. We look forward to working with you to achieve our shared vision of a safer world.</p>
 </div>
 
 <div className={style.per}>
