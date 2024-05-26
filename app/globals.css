@@ -71,6 +71,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-right: 1px solid  rgba(255, 255, 255, 0.315);
   font-weight:bold;
 transition: all .2s ease-in-out ;
+
 }
 
 .Title1{
@@ -83,6 +84,11 @@ transition: all .2s ease-in-out;
   height:70px;
   border-right: .1px solid rgba(0, 0, 0, 0.156)  ;
   font-weight:bold;
+  font-family: "Bebas Neue", Sans-serif;
+  font-weight:bold;
+color: transparent!important;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color:#000000;
 }
 .me{
   font-weight:600;
@@ -169,14 +175,54 @@ background-color: red;
     
 .hed{
   flex-direction: column;
-background-color: rgba(0, 0, 0, 0.889);
-}
+background-color: white;
+z-index: 1;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
+
+}
+.hed1{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100dvw;
+  height: 70px;
+  font-size: 30px;
+  z-index: 10;
+  background-color: white;
+  border-bottom: .5px solid rgba(255, 255, 255, 0.205);
+backdrop-filter: blur(40px);
+transition: all .2s ease-in-out ;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+}
 .Title  h1{
 position: relative;
 top: -5px;
+left: -120px;
+color: black;
+font-weight: 600;
+font-size: 34px;
+font-family: "Bebas Neue", Sans-serif;
+
 }
-.Title  h2{
+.Title1  h1{
+  position: relative;
+  top: 0px;
+  left: -96px;
+  font-size: 34px;
+  font-family: "Bebas Neue", Sans-serif;
+color: transparent!important;
+-webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color:#f90707;
+font-weight: 600;
+  }
+  
+/* .Title  h2{
   position: absolute;
   top: 10px;
   left: 0px;
@@ -195,39 +241,53 @@ top: -5px;
   height: 63px;
   background-image: url('../images/slogo.png');
   background-size: contain;
-}
+} */
+
 .tsp{
+color: black;
   position: absolute;
-  top: 22px;
+  top: 28px;
   display: block;
   cursor: pointer;
   right: 36px;
   transition: all .3s ease-in-out;
 }
+.tsp1{
+  color: rgb(219, 11, 11);
+    position: absolute;
+    top: 18px;
+    display: block;
+    cursor: pointer;
+    rotate: 160deg;
+    right: 36px;
+    transition: all .6s ease-in-out;
+  }
 
   .na{
   position: fixed;
-  top: 60px;
-  transform: translateX(100%) ;
+  top: 90px;
   transition: all .4s ease-in-out;
   width: 100dvw;
-  height: 100dvh;
+  height: 52dvh;
+  transform: translatex(100%);
+
 }
 .na1{
+  transform: translatey(0%);
   position: fixed;
-  top: 60px;
+  top: 90px;
   width: 100dvw;
-  height: 100dvh;
-  transform: translateX(0%);
+  height: 52dvh;
   transition: all .4s ease-in-out;
 }
+
 .me{
-  background-color: black;
+  background-color: white;
   font-weight:600;
-  color:white;
+  color:black;
   font-size: 16px;
   position: fixed;
-  top: 30px;
+  top: 0px;
   left: 0px;
   gap: 4px;
   flex-direction: column;
@@ -238,53 +298,38 @@ top: -5px;
   width: 100%;
   height: 100%;
 }
+.active{
+  background-color: rgb(219, 11, 11);
+
+}
+
 .me a,.me1 a{
-  padding: 50px 0px;
+  
+  padding: 26px 0px;
 }
 
 .Title,.Title1{
   border-right: 0px;
 }
 
-
-.active{
-  height: 24px;
- clip-path:none;
-background-color: red;
-}
-
-
 .me a::after,
   .me1 a::after{
- position: absolute;
- content: '';
- left: 0px;
- top: 0px;
- width: 100%;
- height: 0px;
- background-color:rgba(245, 222, 179, 0.951);
+display: none;
+}
 
- z-index: -10;
- transition: height .3s ease-in-out;
- clip-path: none;
-}
-.me a:hover::after,
-  .me1 a:hover::after{
- height: 100%;
-}
 
 .me1{
-  background-color: black;
+  background-color: white;
   font-weight:600;
-  color:white;
+  color:black;
   font-size: 16px;
   position: fixed;
-  top: 10px;
+  top: -20px;
   left: 0px;
   gap: 4px;
   flex-direction: column;
   display:flex;
-  transition: all .5s ease-in-out;
+  transition: all .2s ease-in-out;
   text-align: center;
   z-index: 10;
   width: 100%;

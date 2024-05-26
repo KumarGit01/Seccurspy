@@ -7,7 +7,7 @@ import { PiCircleNotchFill } from "react-icons/pi";
 import { MdOutlineCatchingPokemon } from "react-icons/md";
 import { IoMdAdd } from "react-icons/io";
 import Link from 'next/link';
-
+import { GiChemicalArrow } from "react-icons/gi";
 import { FaFacebookMessenger } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io5";
@@ -17,10 +17,17 @@ import { SiGooglemaps } from "react-icons/si";
 export default function Home() {
   const [setOver, setSetOver] = useState('s1');
   const [slider, setSlider] = useState('si1');
+  const [get, setget] = useState(false);
+
   
 
   const hanC = (clicked) => {
     setSetOver(clicked);
+  };
+
+
+  const getit = () => {
+    setget(!get);
   };
 
 
@@ -37,7 +44,8 @@ export default function Home() {
 <p className={style.p1} >YOUR SECURITY OUR PRIORITY</p>
 <h1>EXPERIENCE SECURITY LIKE NEVER BEFORE!</h1>
 <p className={style.p2}><span>Stay Secure</span>: We are a leading provider of surveillance systems and solutions for residential and commercial customers</p>
-      <div className={style.midlogo}>
+     <button onClick={getit} className={get ? `${style.midmid1}` : style.midmid }><GiChemicalArrow/></button>
+      <div className={get ? `${style.midlogoonclick}` : style.midlogo }>
    <Link href=':https://www.facebook.com/profile.php?id=61550127482080&mibextid=ZbWKwL
 ' >
     <span className={style.face}><FaFacebookMessenger /></span></Link>

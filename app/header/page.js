@@ -3,6 +3,9 @@ import Link from 'next/link'
 import { useEffect,useState } from 'react'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaAnglesRight } from "react-icons/fa6";
+import { useParams } from 'next/navigation';
+import { GiBoomerangCross } from "react-icons/gi";
+
 export default function Header() {
   const [state,setState] = useState(false)
 
@@ -31,9 +34,8 @@ return (
     
     <div className={ state ?'hed1':'hed'}>
       <div className={ state ?'Title1':'Title'}>
-       <h1>Securspy .</h1>
-       <h2></h2>
-       <span className='tsp'  onClick={Ml}><RxHamburgerMenu/> </span>
+       <h1>Securspy </h1>
+       <span className={ state ?'tsp1':'tsp'}  onClick={Ml}><GiBoomerangCross/> </span>
  </div>
       <div className={nstate ? 'na1' : 'na'}>
       <div className={state ? 'me1' : 'me'} >
