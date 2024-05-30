@@ -20,7 +20,6 @@ window.removeEventListener('scroll',change)
 }
 },[])
 
-console.log(window.innerHeight/10*8,show)
   const rout=()=>{
     router.push('/contact')
       }
