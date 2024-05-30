@@ -5,6 +5,7 @@
   position: relative;
   width: 99dvw;
   height: 70dvh;
+
  }
 
  .f1{
@@ -187,6 +188,8 @@ color: aliceblue;
   width: 99dvw;
   height: 120dvh;
   overflow: hidden;
+  background-color: black;
+  color: white;
  }
 
  .f1{
@@ -198,14 +201,19 @@ gap: 60px;
 left: 40px;
 text-align: center;
 line-height: 30px;
+
  }
 
+ .f1 div p{
+color: white;
+ }
 
 .foc{
-  
-left: 60px;
-
+  bottom: 0px;
+left: 70px;
 width: 100%;
+margin-top: 20px;
+color: aquamarine;
 }
 
 
@@ -224,9 +232,9 @@ width: 100%;
  
   .connect1{
     width: 200px;
-    line-height: 90px;
+    line-height: 80px;
     top: 60px;
-    font-size: 90px;
+    font-size: 70px;
     left: 20px;
    
   }
@@ -238,6 +246,8 @@ width: 100%;
 
   .super{
     margin-top: 80px;
+    background-image: url('../../images/S\ images/ns7.jpg');
+background-position: center;
   }
 
  .super1{

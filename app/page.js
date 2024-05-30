@@ -69,7 +69,7 @@ export default function Home() {
 
 <div className={style.Services}   > 
 <div className={style.container}>
-  <div  className={`${style.dropdown} ${style.trnslate}`} >All Services <span className={style.i}><FaArrowRight /> </span></div>
+<Link href='/service'> <div  className={`${style.dropdown} ${style.trnslate}`} >All Services <span className={style.i}><FaArrowRight /> </span></div></Link>
   <h1  className={`${style.h} ${style.trnslate}` } >Protection Services</h1>
   <div   className={`${style.subheading} ${style.trnslate}`}>Our Services, Your Peace of Mind</div>
   <p   className={ `${style.subheadingsub} ${style.trnslate}`}  >At Securspy, we offer a wide range of security solutions designed to protect you, your assets, and your peace of mind.</p>
@@ -101,9 +101,7 @@ export default function Home() {
 </div>
 
 <div className={style.fix} >
-  <div className={style.con} id = 'con'>
-
-  </div>
+  
 
  
   

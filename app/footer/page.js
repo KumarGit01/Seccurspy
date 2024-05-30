@@ -2,10 +2,25 @@
 import { useRouter } from 'next/navigation';
 import { MdOutlineCopyright } from "react-icons/md";
 import style from './navbar.module.css'
+import { useEffect, useState } from 'react';
 
 const Footer = () => {
   const router = useRouter()
+const [show,setShow] = useState(false)
 
+  useEffect(()=>{
+    const change =()=>{
+      if (window.scrollY > window.innerHeight/10*9)  {
+        setShow(!show);
+      }
+}
+window.addEventListener('scroll',change)
+return()=>{
+window.removeEventListener('scroll',change)
+}
+},[])
+
+console.log(window.innerHeight/10*8,show)
   const rout=()=>{
     router.push('/contact')
       }
@@ -46,6 +61,7 @@ const Footer = () => {
   </div>
   <h1 className={style.foc}><span><MdOutlineCopyright/></span> Securspy 2019 - Bengaluru </h1>
   </div>
+
   </>
 
   );

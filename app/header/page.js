@@ -23,7 +23,6 @@ useEffect(()=>{
   };
 },[])
 
-console.log(nstate)
 
 const Ml = () =>{
   nsetState(!nstate)
